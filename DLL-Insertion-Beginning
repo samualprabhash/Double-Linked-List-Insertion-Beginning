@@ -1,0 +1,83 @@
+class DoubleLinkedList
+{
+    Node head;
+    class Node
+    {
+        int data;
+        Node next;
+        Node prev;
+
+        Node(int data)
+        {
+       this.data=data;
+       
+        }        
+    }
+    public void Insertatbeginning(int data){
+        Node newNode=new Node(data);
+        if(head!=null)
+        {
+            newNode.next=head;
+            head.prev=newNode;
+        }
+        head=newNode;
+} 
+public void printallNodes(){
+    Node temp=head;
+    while(temp!=null){
+        System.out.print(temp.data +" ");
+        temp=temp.next;
+    }
+    System.out.println();
+ }
+       public static void main(String[] args){
+           DoublyLinkedList list=new DoublyLinkedList();
+           list.Insertatbeginning(100);
+            list.Insertatbeginning(200);
+            list.Insertatbeginning(300);
+       
+      list.printallNodes();
+               
+       }
+      }class DoublyLinkedList
+{
+    Node head;
+    class Node
+    {
+        int data;
+        Node next;
+        Node prev;
+
+        Node(int data)
+        {
+       this.data=data;
+       
+        }        
+    }
+    public void Insertatbeginning(int data){
+        Node newNode=new Node(data);
+        if(head!=null)
+        {
+            newNode.next=head;
+            head.prev=newNode;
+        }
+        head=newNode;
+} 
+public void printallNodes(){
+    Node temp=head;
+    while(temp!=null){
+        System.out.print(temp.data +" ");
+        temp=temp.next;
+    }
+    System.out.println();
+ }
+       public static void main(String[] args){
+           DoublyLinkedList list=new DoublyLinkedList();
+           list.Insertatbeginning(100);
+            list.Insertatbeginning(200);
+            list.Insertatbeginning(300);
+       
+      list.printallNodes();
+               
+       }
+      }
